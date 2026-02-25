@@ -1,10 +1,12 @@
-﻿using System;
+using System;
 
 class FibonacciProgram
 {
-    
-    static void PrintFibonacci(int n)
+    static void Main()
     {
+        Console.Write("Enter how many Fibonacci numbers to display: ");
+        int n = int.Parse(Console.ReadLine()!);
+
         int a = 0, b = 1;
 
         Console.Write("Fibonacci series: ");
@@ -19,13 +21,5 @@ class FibonacciProgram
         }
 
         Console.WriteLine();
-    }
-
-    static void Main()
-    {
-        Console.Write("Enter how many Fibonacci numbers to display: ");
-        int n = int.Parse(Console.ReadLine()!);
-
-        PrintFibonacci(n);
     }
 }
